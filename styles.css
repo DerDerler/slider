@@ -1,0 +1,93 @@
+/* styles.css */
+.slider-divider-wrapper {
+    width: 100%;
+    padding: 20px;
+    margin: 15px 0;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    font-family: var(--font-ui);
+}
+
+.slider-divider-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: var(--text-normal);
+}
+
+.slider-track-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.slider-label {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: var(--text-muted);
+    white-space: nowrap;
+    min-width: 30px;
+}
+
+.slider-label:first-child { margin-right: 15px; }
+.slider-label:last-child { margin-left: 15px; text-align: right; }
+
+.slider-divider-input {
+    -webkit-appearance: none;
+    flex-grow: 1;
+    min-height: 12px;
+    border-radius: 100%;
+    outline: none;
+    cursor: pointer;
+    margin: 0;
+    background: linear-gradient(to right, #ff4757, #ffa502, #2ed573);
+}
+
+.slider-divider-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    background: black;
+    border: 3px solid white;
+    border-radius: 50%;
+    cursor: grab;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+    transform: translateY(0px);
+    position: relative;
+    z-index: 2;
+}
+
+.slider-divider-input::-moz-range-thumb {
+    width: 28px;
+    height: 28px;
+    background: black;
+    border: 3px solid white;
+    border-radius: 50%;
+    cursor: grab;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+    transform: translateY( 0px);
+    position: relative;
+    z-index: 2;
+}
+
+.slider-divider-input::-webkit-slider-thumb:active {
+    cursor: grabbing;
+    transform: translateY(0px) scale(1.15);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.slider-divider-input::-webkit-slider-runnable-track {
+    height: 12px;
+    border-radius: 6px;
+    background: transparent;
+}
+
+.slider-divider-input::-moz-range-track {
+    height: 12px;
+    border-radius: 6px;
+    background: transparent;
+}

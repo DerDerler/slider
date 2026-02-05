@@ -1,0 +1,10 @@
+{
+	"id": "slider",
+	"name": "Status Slider",
+	"version": "1.0",
+	"minAppVersion": "1.4.0",
+	"description": "Track the status of something with a simple Slider",
+	"author": "Stefan Derler",
+	"authorUrl": "https://github.com/DerDerler",
+	"isDesktopOnly": false
+}

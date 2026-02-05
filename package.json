@@ -1,0 +1,14 @@
+{
+  "name": "obsidian-gradient-slider",
+  "version": "1.0.0",
+  "description": "Farbiger Slider für Obsidian",
+  "main": "main.js",
+"scripts": {
+  "build": "npx esbuild main.ts --bundle --external:obsidian --format=cjs --target=es2020 --outfile=main.js"
+},
+  "devDependencies": {
+    "esbuild": "^0.21.5",
+    "obsidian": "^1.11.4",
+    "typescript": "^5.0.0"
+  }
+}
